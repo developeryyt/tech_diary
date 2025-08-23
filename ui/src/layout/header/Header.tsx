@@ -1,42 +1,14 @@
-import './header.module.scss'
-
-export interface PATH {
-    id: string;
-    to?: string;
-}
+import styles from './header.module.scss'
+import LinkList from "../../components/linklist";
 
 
-const HEADERPATH: PATH[] = [
-    {
-        id: 'blog',
-
-    },
-    {
-        id: 'profile',
-
-    },
-    {
-        id: '',
-        to: ''
-    }
-]
 
 const Header = () => {
 
 
     return (
-        <header className='header'>
-            <ul>
-                {
-                    HEADERPATH.map((list) => {
-                        return (
-                            <li key={list.id}>
-                                {list.id}
-                            </li>
-                        )
-                    })
-                }
-            </ul>
+        <header className={styles['header']}>
+            <LinkList />
         </header>
     );
 };
