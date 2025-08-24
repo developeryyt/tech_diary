@@ -1,6 +1,7 @@
-import type {PATH} from "./types.ts";
+import type {PATH} from "../types";
 
-export const LINK_PATH: PATH = [
+
+export const LINK_PATH: PATH[] = [
     {
         id: 'Blog',
         title: '블로그'
