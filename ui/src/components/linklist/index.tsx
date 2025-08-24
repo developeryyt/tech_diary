@@ -11,7 +11,7 @@ const LinkList = ({ className }: CompProps) => {
                 LINK_PATH?.map((list) => {
                     return (
                         <li key={list.id}>
-                            <NavLink to={`/${list.id}`} end>{list.id}</NavLink>
+                            <NavLink to={`/${(list.id).toLowerCase()}`} end>{list.id}</NavLink>
                         </li>
                     )
                 })

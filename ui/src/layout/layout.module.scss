@@ -1,4 +1,15 @@
 .layout {
   max-width: 1240px;
   margin: 0 auto;
+  padding: 20px 0;
+  box-sizing: border-box;
 }
+
+aside {
+  & + div {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 200px)
+  }
+}
+

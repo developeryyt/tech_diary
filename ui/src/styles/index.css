@@ -1,4 +1,24 @@
+@import "ui_component.scss";
+@import "ui_main.scss";
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#root {
+    height: inherit;
+}
+
 ul,li {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -10,3 +30,9 @@ a {
         color: #333;
     }
 }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
